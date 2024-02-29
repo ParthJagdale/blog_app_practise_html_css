@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0%;
+    
+    box-sizing: border-box;
+
+}
+
+body{
+
+    
+}
+.container{
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    width: 100wh;
+    height: 100wh;
+
+}
+
+@media (min-width) {
+
+    .container{
+        grid-template-rows: repeat(2,1fr);
+    }
+    
+    
+}
+.title-page
+{
+    margin-bottom: 2rem;
+}
+.title{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem    ;
+}
+.title-content{
+    max-width: 566;
+    color: rgb(25, 194, 194);
+    text-align: center; 
+    line-height: 2rem;
+     margin-bottom: 1rem;
+    margin-top: 2rem  
+}
+
+.cardlist
+{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(103, 93, 93);
+    border-radius: 2px;
+    margin: 23px;
+
+}
+.image{
+    position: relative;
+    overflow: hidden;
+    height: 12rem;
+}
+.card-image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;padding: 1.5rem;
+}
+.card1 :hover .card-image{
+    transform: scale(1.2);
+    transition-duration: 200ms;
+}
+.card-heading
+{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    line-height: 1.5rem;
+    margin-bottom: 0.6rem;
+    align-items: center;
+}
+
+.card_hover{
+    text-decoration: none;
+    color: rgb(74, 74, 231);
+    
+}
+
+.card_hover :hover 
+{
+    color: red;
+}
+ 
+.card-description{
+    color: rgb(171, 156, 156);
+}
+
+.card-footer{
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+
+}
+.author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.author_avatar{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.author-info-container{
+    display: flex;  
+   flex-direction: column;
+}
+.author_name
+{
+    color: rgb(112, 112, 221);
+}
+.dob{
+    color: cadetblue;
+}
+.card_tag_container
+{
+    font-size: 0.9rem;
+
+    border: 1px solid black;
+    border-radius: 3px;
+    line-height: 1.3rem;
+    
+    padding: 0.25rem 0.5rem;    
+    color: grey;
+
+}
+
+.card1
+{
+    overflow: hidden;
+  border: .4rem pink solid;  
+  border-radius: .5rem;
+}
+.author_avatar{
+    border: 0.1rem pink solid;
+    border-radius: 022px;
+}
+.cardlist
+{
+    border: rgb(236, 139, 236) solid .2rem;
+    border-radius: 12px;
+
+}
+.title-page
+{
+    border: rgb(236, 139, 236) solid .2rem;
+    border-radius: 12px;
+
+}
+.title-content
+{
+    font-size: 23px;
+    color: blue;
+}
+.card_tag_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem ;
+}
